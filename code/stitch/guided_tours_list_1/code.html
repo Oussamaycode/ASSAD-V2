@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guided Tours List - Virtual Zoo AFCON 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414", // Base dark text
+                        "brand-blue": "#2563eb", // Requested primary blue
+                        "brand-green": "#16a34a", // Requested green tags
+                        "brand-orange": "#ea580c", // Requested orange/red buttons
+                        "background-light": "#f8fafc", // Very light cool gray
+                        "background-dark": "#0f172a", // Dark slate
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-primary dark:text-white min-h-screen flex flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 shadow-sm">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="text-brand-blue">
+<span class="material-symbols-outlined text-4xl">pets</span>
+</div>
+<div>
+<h2 class="text-xl font-bold leading-none tracking-tight">Virtual Zoo</h2>
+<span class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">AFCON 2025 Morocco</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-brand-blue transition-colors" href="#">Home</a>
+<a class="text-sm font-semibold text-brand-blue" href="#">Tours</a>
+<a class="text-sm font-semibold hover:text-brand-blue transition-colors" href="#">Map</a>
+<a class="text-sm font-semibold hover:text-brand-blue transition-colors" href="#">My Bookings</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="hidden md:flex items-center justify-center h-10 px-5 rounded-full border border-gray-200 dark:border-slate-700 font-bold text-sm hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
+                Sign In
+            </button>
+<button class="flex items-center justify-center h-10 px-5 rounded-full bg-brand-blue text-white font-bold text-sm hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
+                Join Now
+            </button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="bg-white dark:bg-slate-900 pb-12 pt-10">
+<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-3xl">
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-slate-900 dark:text-white">
+                    Explore Our Guided Tours
+                </h1>
+<p class="text-lg text-gray-500 dark:text-gray-400 leading-relaxed">
+                    Immerse yourself in the wildlife of Morocco during AFCON 2025. Join expert local guides for live, interactive virtual safaris from the comfort of your home.
+                </p>
+</div>
+<div class="mt-10 flex flex-col md:flex-row gap-4 items-center">
+<div class="relative w-full md:max-w-lg">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full h-12 pl-12 pr-4 rounded-xl bg-gray-50 dark:bg-slate-800 border-none focus:ring-2 focus:ring-brand-blue text-base placeholder-gray-400 dark:text-white shadow-sm" placeholder="Search for lions, atlas mountains, or guides..." type="text"/>
+</div>
+<div class="flex gap-2 w-full overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+<button class="flex items-center gap-2 px-4 h-11 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:border-brand-blue dark:hover:border-brand-blue hover:text-brand-blue transition-colors shrink-0 whitespace-nowrap text-sm font-medium shadow-sm">
+<span>Date</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+<button class="flex items-center gap-2 px-4 h-11 rounded-xl bg-brand-blue/10 border border-brand-blue/20 text-brand-blue shrink-0 whitespace-nowrap text-sm font-medium shadow-sm">
+<span>Theme: All</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+<button class="flex items-center gap-2 px-4 h-11 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:border-brand-blue dark:hover:border-brand-blue hover:text-brand-blue transition-colors shrink-0 whitespace-nowrap text-sm font-medium shadow-sm">
+<span>Guide</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+<button class="flex items-center gap-2 px-4 h-11 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:border-brand-blue dark:hover:border-brand-blue hover:text-brand-blue transition-colors shrink-0 whitespace-nowrap text-sm font-medium shadow-sm">
+<span>Review Score</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-blue-50/50 dark:bg-slate-800/30 py-8 border-y border-blue-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-blue">rate_review</span>
+                    Visitor Feedback on Recent Tours
+                </h2>
+<a class="text-sm font-bold text-brand-blue hover:underline" href="#">View All Reviews</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-slate-800 rounded-xl p-5 shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-700 text-xs font-bold">JD</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white">John Doe</h4>
+<span class="text-xs text-gray-500">visited Atlas Lion Encounter</span>
+</div>
+</div>
+<div class="flex text-yellow-400 text-sm">
+<span class="material-symbols-outlined text-base fill-current">star</span>
+<span class="material-symbols-outlined text-base fill-current">star</span>
+<span class="material-symbols-outlined text-base fill-current">star</span>
+<span class="material-symbols-outlined text-base fill-current">star</span>
+<span class="material-symbols-outlined text-base fill-current">star</span>
+</div>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-300 italic">"Amazing experience! Youssef was incredibly knowledgeable and the lions were active."</p>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl p-5 shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-700 text-xs font-bold">SA</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white">Sarah Alami</h4>
+<span class="text-xs text-gray-500">visited Secrets of the Sahara</span>
+</div>
+</div>
+<div class="flex text-yellow-400 text-sm">
+<span class="material-symbols-outlined text-base fill-current">star</span>
+<span class="material-symbols-outlined text-base fill-current">star</span>
+<span class="material-symbols-outlined text-base fill-current">star</span>
+<span class="material-symbols-outlined text-base fill-current">star</span>
+<span class="material-symbols-outlined text-base text-gray-300">star</span>
+</div>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-300 italic">"The dunes look beautiful even through a screen. Guide was very friendly."</p>
+</div>
+<div class="bg-brand-blue/5 dark:bg-brand-blue/10 rounded-xl p-5 border border-dashed border-brand-blue/30 flex flex-col items-center justify-center gap-3 text-center">
+<div class="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue">
+<span class="material-symbols-outlined">edit_note</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white">Been on a tour recently?</h4>
+<p class="text-xs text-gray-500 mt-1">Share your experience with the community</p>
+</div>
+<button class="text-xs font-bold text-white bg-brand-blue px-4 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                        Leave a Comment
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 py-12">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Upcoming Tours</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all duration-300 flex flex-col h-full border border-gray-100 dark:border-slate-700">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-brand-green text-white text-xs font-bold uppercase tracking-wide shadow-sm">Big Cats</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a majestic lion face with a golden mane" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbF8nMECykg37w22k6whvUy-aJ5OEOkgefXGxcAiniTX6K8B0SPnUhLOBFvk9shoaMjZzs92j-fn9KYtdOIQfvaf2tsxTu_VKl2TCVW2iWPfpWb-QQwPbGCjJtmL8Osu2TTyQTJ_xEGiLo6rWZzqfT_loWjV9IZMEPjNG9f57e4W35cVp1llB4Dd_dEKkDB819hfAufeWaYzluHcmGga88hFMj7FBsLZD3yv5Q0soC85v4zBcqLejgZF_QaLhnK2Gh7lvD7xVnF8OR');"></div>
+<div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm dark:bg-slate-900/90 px-2 py-1 rounded-md flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="text-yellow-500 material-symbols-outlined text-sm">star</span>
+<span>4.9</span>
+<span class="text-gray-400 font-normal">(124)</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-2 text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">schedule</span> 45 mins • Live
+                    </div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 line-clamp-1">Atlas Lion Encounter</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">Join Youssef for an exclusive live session with the majestic Atlas Lions in their protected reserve.</p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-slate-700 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden" data-alt="Portrait of tour guide Youssef">
+<img alt="Guide Youssef" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmeVr_oX_frw_8Yj8DvO2BDV5OBGfdNJDRLt7rG1MpygTUENqqZGl9DwhncrAdZDoAYBfLoq6_sMs4WugrXhzjX_zL3W9ySJUj_IaYFLfp6wIHFXnufnsgGmjiUP4PxvggaOHj3hHHjyHEFk1kZDTG6pW5yKjEWYP1tGFyezK-7gzTCo05f3Zp9TfAoncFoeyy_SwqRCJqi1NOZoCnAchq--JUURFjAsPfQkga_hnf5j1td6Q08boAkcT0vy2mDBITxg3uNwm1NTOE"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500 dark:text-gray-400">Guided by</span>
+<span class="text-sm font-semibold text-brand-blue">Youssef Amrani</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-semibold text-gray-500 hover:text-brand-blue cursor-pointer transition-colors w-fit">
+<span class="material-symbols-outlined text-sm">comment</span>
+                            View 3 recent comments
+                        </div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="text-xs text-gray-500 line-through">$25.00</span>
+<span class="text-lg font-bold text-slate-900 dark:text-white">$20.00</span>
+</div>
+<button class="bg-brand-orange hover:bg-orange-700 text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-orange-500/20">
+<span>Book Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all duration-300 flex flex-col h-full border border-gray-100 dark:border-slate-700">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-brand-green text-white text-xs font-bold uppercase tracking-wide shadow-sm">Desert Life</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Wide shot of Sahara desert dunes at sunset with camels" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHZI0bjhHU7jFtbTMWnS9VMwXMWR4Yg4CPy6cZdU5s5QJoOgjxR8qq4zZUBsBAVoo3pgNk-HlIH6CfobW9mYv6mMuoaN7uR5Hmbc3YHtq48Wi3TjJxozDUFNaG10CuA3o81F_BUVwYGL7lIJq8RP8xRqzzAMYsOE8zUqCQpUgO9R5koaghVG7alvotWBDwkpM-RY3qjjCD2Tu-bmhTAEMnBflKE2KmGbxMp4ixaWRznSdzAeo3ygifn1Cx1q6Biv8asvo5ZSeplxR8');"></div>
+<div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm dark:bg-slate-900/90 px-2 py-1 rounded-md flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="text-yellow-500 material-symbols-outlined text-sm">star</span>
+<span>4.7</span>
+<span class="text-gray-400 font-normal">(85)</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-2 text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">schedule</span> 60 mins • Live
+                    </div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 line-clamp-1">Secrets of the Sahara</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">Discover the hidden wildlife of the dunes, from fennec foxes to desert monitors.</p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-slate-700 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden" data-alt="Portrait of tour guide Amina">
+<img alt="Guide Amina" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKNnu7yO3Ile2ZIZcAzDopw8mzZB7CqrdYru5yZpay3cAS4oNV7o-sg9mfszGnok6rTbSsc846G6ugvQOXciiUMauKY4hY8mMCtKKiJkDHPOlh1hJvv_uORHYQOEet6j6OoycNdh8MMgkM8IanMd0E_7i_xpWFv6_vCIwAbz62lRa8Ilw0jh7_S3vick4T76sOEJP6NvdZ-DeAOhJmjx0tx8YnYO-0zjZT-YUvhShDzMjqrBKhh9AcsEHLb6L3-qmUpYIMT-WpXChU"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500 dark:text-gray-400">Guided by</span>
+<span class="text-sm font-semibold text-brand-blue">Amina Zaki</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-semibold text-gray-500 hover:text-brand-blue cursor-pointer transition-colors w-fit">
+<span class="material-symbols-outlined text-sm">comment</span>
+                            View 8 recent comments
+                        </div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="text-lg font-bold text-slate-900 dark:text-white">$18.00</span>
+</div>
+<button class="bg-brand-orange hover:bg-orange-700 text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-orange-500/20">
+<span>Book Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all duration-300 flex flex-col h-full border border-gray-100 dark:border-slate-700">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-brand-green text-white text-xs font-bold uppercase tracking-wide shadow-sm">Birds</span>
+<span class="px-2.5 py-1 rounded-full bg-blue-500 text-white text-xs font-bold uppercase tracking-wide shadow-sm">Wetlands</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Flock of pink flamingos in a shallow lake" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY8vFdRqMV31SMhoaM8xIfOB4zh69Eaogu_SGEKZPzjArHqTzVenOF__z-CeM5QlQgI6j0V_YYfgJ6Oj5JR4DhdwsTlGU0ooNxqYj0wWdxJLCzHahiiIxSf3ntyb36JawhV9zf9Dm15KowySe01CvlBcpIcrzjeYILbt2-GVfyigLaHkHA1CfQrtenkx_jE3Yx5IX4iSHO_B5T7K6g64iB8nIQI4BBd3A7FPN7HCWG2rd7ucgOIx0ipSC6ISq9gshs2jEQ-NE8wcsb');"></div>
+<div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm dark:bg-slate-900/90 px-2 py-1 rounded-md flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="text-yellow-500 material-symbols-outlined text-sm">star</span>
+<span>4.5</span>
+<span class="text-gray-400 font-normal">(42)</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-2 text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">schedule</span> 30 mins • Recorded
+                    </div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 line-clamp-1">Flamingos of Nador</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">A peaceful morning watch of the migrating flamingos in the Nador lagoon.</p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-slate-700 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden" data-alt="Portrait of tour guide Karim">
+<img alt="Guide Karim" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY-EwllbyYh9T2tmNk2xAg0z6To1nXmY5O1PevvtR7CingCcE863xbjfdRpawGUukFgULKlizX0BPPJi_573i_85WWb9yR-sb66mOK5wFCDH6cf4EBtDsra_uFlye_wUpftTRzSWjTfT76IHgnuZuOJCRsa31I5Xd0Qls-6j7LTymZnp_CTDOOe_mnt-ct0i1J28ROcr7qu0SgCMSEzICpPhHSTXq1E5VZaP6ScBFcASotxaGuCdps05LSPKRkFNBZruavme1SDvz1"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500 dark:text-gray-400">Guided by</span>
+<span class="text-sm font-semibold text-brand-blue">Karim Benali</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-semibold text-gray-500 hover:text-brand-blue cursor-pointer transition-colors w-fit">
+<span class="material-symbols-outlined text-sm">comment</span>
+                            No comments yet
+                        </div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="text-lg font-bold text-slate-900 dark:text-white">$15.00</span>
+</div>
+<button class="bg-brand-orange hover:bg-orange-700 text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-orange-500/20">
+<span>Book Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all duration-300 flex flex-col h-full border border-gray-100 dark:border-slate-700">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-brand-green text-white text-xs font-bold uppercase tracking-wide shadow-sm">Primate</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Barbary macaque sitting on a cedar tree branch" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLYfG1FUWzPciJucYJE5ivKlPIkLRS5Rwx7n3pwXDQdcEVvam_TIM5TMizVCUlX00GxjxQ4TcblHMiTytXtTEmvnGy0F3rvu6GoTtWEBpfD5T1iDS7mDzu-IuC2CDdpjkm7y8Y7hJLfnJLalUy1xauPXVzwF6PfZYhU_aW4Tm-CcelQ6x10mvVLumzZr548j0HVRX_CdkJg7xUtapwTILUllT0gGNqvYy3JdJJWTBhlEnhJ3kv_eliqDdF1nWCxBnABuqewouTCb49');"></div>
+<div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm dark:bg-slate-900/90 px-2 py-1 rounded-md flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="text-yellow-500 material-symbols-outlined text-sm">star</span>
+<span>4.8</span>
+<span class="text-gray-400 font-normal">(210)</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-2 text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">schedule</span> 45 mins • Live
+                    </div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 line-clamp-1">Barbary Macaques</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">Visit the Cedar forests of the Middle Atlas and meet our playful macaques.</p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-slate-700 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden" data-alt="Portrait of tour guide Layla">
+<img alt="Guide Layla" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrGG7NbeSQBVUbb6mo9iI4gBXTKMbruw-ILd04x8vfhu50nFiieMr1ZuHDSwaLdVFSBHYTaHwSZabAn7mLPDWhHgj_EGH0GriwZwLZN0Rk5iVDz1S5l16mFgwZfgSL-JVp3zs7k2fzD5y5sJEORpLAA2DCP8m3P6njASOe6jAC_IZo9li3K93wmLaXzoPE9FN5daPRQdZJG85Nk1R6njQngWZqZZDdzeD3dKxlHyMn90VMAerFJZuSyqBE4jW6XSLcf8L0KHs29MG3"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500 dark:text-gray-400">Guided by</span>
+<span class="text-sm font-semibold text-brand-blue">Layla Idrissi</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-semibold text-gray-500 hover:text-brand-blue cursor-pointer transition-colors w-fit">
+<span class="material-symbols-outlined text-sm">comment</span>
+                            View 15 recent comments
+                        </div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="text-lg font-bold text-slate-900 dark:text-white">$22.00</span>
+</div>
+<button class="bg-brand-orange hover:bg-orange-700 text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-orange-500/20">
+<span>Book Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all duration-300 flex flex-col h-full border border-gray-100 dark:border-slate-700">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-brand-green text-white text-xs font-bold uppercase tracking-wide shadow-sm">Reptiles</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a desert cobra in sand" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeWdtDfK3euywxbth7IEWExFCqaAeXVS8K7NEY6c9R1a3Qli9gSD6kMR7cuR3cn45VK64SQhYgku5VTlfxpe78wkE-_LnI1LL1iE2punihPy6e5UyTwGIm3TADkq3I0BzQ8pJEaB09vrcqAOQLEfpb-r4FZW8-iKfyJtktrxyhq-afXa4hN16uM4o4qTk1Ss3Eluz3btbeC30rp7DWCWCyh1fVQMoXFndx5uNNjszzZoCh9tX8ew_NC_CR64stWFRgOj_TyIntOijM');"></div>
+<div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm dark:bg-slate-900/90 px-2 py-1 rounded-md flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="text-yellow-500 material-symbols-outlined text-sm">star</span>
+<span>4.6</span>
+<span class="text-gray-400 font-normal">(18)</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-2 text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">schedule</span> 40 mins • Recorded
+                    </div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 line-clamp-1">Reptiles of Morocco</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">An educational tour focusing on the diverse reptile species of the region.</p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-slate-700 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden" data-alt="Portrait of tour guide Omar">
+<img alt="Guide Omar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxWfNEED1uNH0IEauU-XRIjVro6Z18_Cfb-aoOTnYPDpI1K5l-wXhVc_Vyeg16lubLPRGSbxcNEihScWaaBQjEjP0gMDgGk-zJVszOyIoIvVC0KFrD7xKKBHXjwEb-RcgOj8DJ0ohlV_XmzYy_eeebKI40BpKxa6PRFSryhTDk1wYy7EfxzwEQ9aCW42hnvVTUUhOJB590wkbmRx9KBeVm5ew2Aua11IfnZCj6HV19XEXZW7kloHcJPAtzMEFX0JfPclyWEmOIMR3G"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500 dark:text-gray-400">Guided by</span>
+<span class="text-sm font-semibold text-brand-blue">Omar Tazi</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-semibold text-gray-500 hover:text-brand-blue cursor-pointer transition-colors w-fit">
+<span class="material-symbols-outlined text-sm">comment</span>
+                            View 2 recent comments
+                        </div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="text-lg font-bold text-slate-900 dark:text-white">$12.00</span>
+</div>
+<button class="bg-brand-orange hover:bg-orange-700 text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-orange-500/20">
+<span>Book Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all duration-300 flex flex-col h-full border border-gray-100 dark:border-slate-700">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-brand-green text-white text-xs font-bold uppercase tracking-wide shadow-sm">Marine</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Dolphins jumping out of blue ocean water" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLorhIAW-gA_rl4MlJrOC2Av-GrM4M4tGV1HVOq9dCKvko1kM3QOI1MJgRXub5ziwrWW85J9lJwMN3rbFRwxev-gKhQj3WiZcaKk-q-DzS2AwFDoMF_QZe1P7FRq2YCBdA5Fk7f7YBi_tmiRi8RqmR8Znwe0RIb4P5IUUYwEmjZuMwQptTfKlx2BM0YUVjiAYqPrHrQcf93A-CM31TztzXNhQ2nJpuOA0cNb6QT-sUPBeFKHPaddUE_Zq0KCfhw3wE-0AfuIa-N4dq');"></div>
+<div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm dark:bg-slate-900/90 px-2 py-1 rounded-md flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="text-yellow-500 material-symbols-outlined text-sm">star</span>
+<span>5.0</span>
+<span class="text-gray-400 font-normal">(99)</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-2 text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">schedule</span> 50 mins • Live
+                    </div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 line-clamp-1">Mediterranean Dolphins</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">Spot dolphins in the strait of Gibraltar with marine biologist Sarah.</p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-slate-700 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden" data-alt="Portrait of tour guide Sarah">
+<img alt="Guide Sarah" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE9hT37qdQZcuLpEHQWi3LhLiP-sNXm8P0sDfuUpBDcU9OvnClvXezgDxd78QRb4bnjJ7Zn_9uI2oUFDIvZu1O2YPkU_Ct0KcFgIWXt_uZqszPFThS5nAPGOhRPA1QiB56knAM_h1l95QhYniuabvjN1T2_WWHmDcg2zWtytRUiDOrtLICzKI3qUOKTJnmdD51fqPIySQsjgWY-uqVBS_o4lfruawX6f1zEZXV5eXz0sgY5UeN8j1EhLEUJT2lZ6RfsxoRgDVV0IXq"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500 dark:text-gray-400">Guided by</span>
+<span class="text-sm font-semibold text-brand-blue">Sarah Mansouri</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-semibold text-gray-500 hover:text-brand-blue cursor-pointer transition-colors w-fit">
+<span class="material-symbols-outlined text-sm">comment</span>
+                            View 24 recent comments
+                        </div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="text-lg font-bold text-slate-900 dark:text-white">$28.00</span>
+</div>
+<button class="bg-brand-orange hover:bg-orange-700 text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-orange-500/20">
+<span>Book Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<button class="flex items-center gap-2 px-8 py-3 rounded-full bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-brand-blue font-bold shadow-sm hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors">
+<span>Load More Tours</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800 py-10">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500">
+<div>
+            © 2025 Virtual Zoo AFCON. All rights reserved.
+        </div>
+<div class="flex gap-6">
+<a class="hover:text-brand-blue transition-colors" href="#">Privacy</a>
+<a class="hover:text-brand-blue transition-colors" href="#">Terms</a>
+<a class="hover:text-brand-blue transition-colors" href="#">Support</a>
+</div>
+</div>
+</footer>
+
+</body></html>

@@ -1,0 +1,55 @@
+ <?php
+
+class Etapesvisite{
+
+    private $titreetape;
+    private $descriptionetape;
+    private $ordreetape;
+    private $id_visite;
+
+    public function __construct($titreetape,$descriptionetape,$ordreetape,$id_visite,){
+        $this->titreetape=$titreetape;
+        $this->descriptionetape=$descriptionetape;
+        $this->ordreetape=$ordreetape;
+        $this->id_visite=$id_visite;
+    }
+
+    public getTitre(){return $this->titreetape;}
+    public getOrdreEtape(){return $this->ordreetape;}
+    public getDescriptionEtape(){return $this->descriptionetape;}
+    public getIDVisite(){return $this->id_visite;}
+
+    public setTitre($titreetape){$this->titreetape=$titreetape;}
+    public setOrdreEtape($order){$this->ordreetape=;}
+    public setDescriptionEtape(){return $this->descriptionetape;}
+    public setIDVisite(){return $this->id_visite;}
+
+    public function ajouter (){
+
+        try{
+
+        $sql="INSERT INTO etapesvisite (titreeatpe,descriptionetape,ordreetape,id_visite) 
+        VALUES (?,?,?,?)";
+        $stmt=$this->connect()->prepare($sql);
+        $stmt->execute([$this->titreetape,$this->descriptionetape,$this->ordreetape,$this->id_visite]);
+        echo "Step succesfully added";
+
+        }
+
+        catch(PDOException $e){
+
+        echo "ERREUR SQL : " . $e->getMessage() . 
+             " in : " . $e->getFile() . 
+            " line : " . $e->getLine();
+      }
+        
+
+    }
+
+    public function afficher(){
+        $sql="SELECT FROM etapesvisite";
+        $stmt=$this->connect()->query($sql);
+        return $stmt->fetchall;
+    }
+    
+}

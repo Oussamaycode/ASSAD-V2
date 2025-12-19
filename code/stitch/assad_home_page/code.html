@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ASSAD - Virtual Zoo &amp; AFCON 2025</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414",
+                        "accent-blue": "#1E3A8A",
+                        "accent-blue-light": "#E0F2FE",
+                        "accent-orange": "#EA580C",
+                        "accent-green": "#16A34A",
+                        "background-light": "#F8FAFC", 
+                        "background-dark": "#0F172A", 
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-primary dark:text-white transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-6 lg:px-10 py-4">
+<div class="flex items-center gap-4">
+<div class="size-8 text-accent-blue dark:text-blue-400">
+<span class="material-symbols-outlined" style="font-size: 32px;">pets</span>
+</div>
+<h2 class="text-primary dark:text-white text-xl font-extrabold tracking-tight">ASSAD</h2>
+</div>
+<nav class="hidden lg:flex flex-1 justify-center gap-8">
+<a class="text-primary dark:text-white text-sm font-semibold hover:text-accent-blue transition-colors" href="code.html">Home</a>
+<a class="text-gray-600 dark:text-gray-300 text-sm font-medium hover:text-accent-blue transition-colors" href="../animals_list/code.html">Animals</a>
+<a class="text-gray-600 dark:text-gray-300 text-sm font-medium hover:text-accent-blue transition-colors" href="#">Live Tours</a>
+<a class="text-accent-blue dark:text-blue-400 text-sm font-bold flex items-center gap-1" href="#">
+                    AFCON 2025
+                    <span class="material-symbols-outlined text-[16px]">sports_soccer</span>
+</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="hidden sm:flex items-center justify-center rounded-lg h-9 px-4 bg-transparent border border-gray-200 dark:border-gray-700 text-primary dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 text-sm font-bold transition-colors" href="../login_and_register/codelogin.html">
+<span class="truncate">Login</span>
+</button>
+<a class="flex items-center justify-center rounded-lg h-9 px-4 bg-accent-orange hover:bg-orange-700 text-white text-sm font-bold shadow-md transition-colors" href="../login_and_register/coderegister.html">
+<span class="truncate">Sign Up</span>
+</a>
+</div>
+</header>
+<!-- Main Content Wrapper -->
+<main class="flex-1 flex flex-col">
+<!-- Hero Section -->
+<div class="w-full bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-background-dark px-4 py-8 lg:px-20 xl:px-40">
+<div class="mx-auto max-w-6xl">
+<div class="relative overflow-hidden rounded-2xl bg-cover bg-center shadow-xl h-[500px]" data-alt="Exciting collage of African wildlife and soccer stadium atmosphere in Morocco" style='background-image: linear-gradient(rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjzlbIJucj_B1IY8J6pRT62Lue7MvG8DqsaYEV36o2qVIVWb3-seysjcea3eUik84NStbCtyLouGsMV5sY4_tWPYQNnC7l8MDSU3SVbnc40BEfZO61yMjsqqKbNin-5L0VwFcfhsidSb-JPz9mxp0gwl4Y6DBAl9b-EAzg-i2NbSN9I8UquWNMXIf8NQnpLJD5WtQvc0Ni4QPERdbzxtgg9YAlHD2NbZ1MVQiN1Yn4_uj8yvJ9ibyUdL-4-WeEl3pOf-BLztddLYWu");'>
+<div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
+<span class="mb-4 inline-flex items-center rounded-full bg-accent-blue/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm mr-1">flag</span>
+                                Morocco 2025
+                            </span>
+<h1 class="mb-4 text-4xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl max-w-4xl">
+                                Experience the Wild Side of <span class="text-blue-200">AFCON 2025</span>
+</h1>
+<h2 class="mb-8 max-w-2xl text-lg font-medium text-gray-200 md:text-xl">
+                                Join the virtual zoo celebration. Explore the majestic wildlife of the Atlas Mountains between matches.
+                            </h2>
+<!-- Search Bar -->
+<div class="w-full max-w-lg">
+<div class="relative flex h-14 w-full items-center overflow-hidden rounded-xl bg-white shadow-lg focus-within:ring-2 focus-within:ring-accent-blue">
+<div class="grid h-full w-12 place-items-center text-gray-400">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="peer h-full w-full border-none bg-transparent pr-2 text-sm text-gray-700 placeholder-gray-400 focus:ring-0 md:text-base" id="search" placeholder="Search for Atlas Lions, Fennec Foxes, Tours..." type="text"/>
+<button class="m-2 rounded-lg bg-primary hover:bg-gray-800 text-white px-6 py-2 text-sm font-bold transition-colors">
+                                        Search
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Stats/Highlights Banner -->
+<div class="w-full bg-white dark:bg-background-dark border-y border-gray-100 dark:border-gray-800">
+<div class="mx-auto max-w-6xl px-4 py-8 lg:px-20 xl:px-40">
+<div class="flex flex-wrap justify-center gap-8 md:justify-between text-center md:text-left">
+<div class="flex flex-col gap-1">
+<h3 class="text-3xl font-black text-accent-blue dark:text-blue-400">24+</h3>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Live Habitats</p>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-3xl font-black text-accent-blue dark:text-blue-400">100%</h3>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Virtual Access</p>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-3xl font-black text-accent-blue dark:text-blue-400">5</h3>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Host Cities</p>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-3xl font-black text-accent-blue dark:text-blue-400">Daily</h3>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Guided Tours</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Animals Grid Section -->
+<section class="w-full px-4 py-12 lg:px-20 xl:px-40 bg-background-light dark:bg-background-dark">
+<div class="mx-auto max-w-6xl">
+<div class="flex items-end justify-between mb-8">
+<div>
+<h2 class="text-2xl font-bold leading-tight tracking-tight text-primary dark:text-white md:text-3xl">
+                                Moroccan Wildlife Highlights
+                            </h2>
+<p class="mt-2 text-gray-500 dark:text-gray-400">Discover the iconic species native to the region.</p>
+</div>
+<a class="hidden sm:flex items-center gap-1 text-sm font-bold text-accent-blue hover:underline" href="#">
+                            View all animals <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<!-- Card 1 -->
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition-all">
+<div class="aspect-square w-full overflow-hidden bg-gray-200">
+<img alt="Majestic Atlas Lion resting on a rock" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Close up of a male lion face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1uuGCbk_FEdNUdUF_nRwfq6ND22rFCvuCshn21zHnDhfQu0NuK7Yk-4AQvCH2afXhbAIhcYcItH8wY7KxrRNUQHIkjeHVc7T0UOku3KEt4BkaARA4YKOCUOTyGnAqfc980M2NIsSx75A4iFOalaqqd9GxiIuBFg_jmFFhkrh-Ws8sf5hS7VlvkoSgikm3F2B-hwwo5-xgshwX1puc43BTr2AZjRq29PI932HtgmDA3kxZJbLdDCMR68Ra1WuMsvUzunBMEOhh-3zV"/>
+</div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center rounded-md bg-accent-green/90 px-2 py-1 text-xs font-bold text-white backdrop-blur-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] mr-1">videocam</span> Live
+                                </span>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-bold text-primary dark:text-white">Atlas Lion</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Symbol of Morocco</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition-all">
+<div class="aspect-square w-full overflow-hidden bg-gray-200">
+<img alt="Fennec Fox with large ears in desert sand" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Cute fennec fox in the desert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkumW-6UdQP8AJFsiPafWcZbt2Is-Q3T4StsgOjYhCMNjme47VH9AYhezi9sckEOd0oNOyCp2hIZ4NNpTdyt0Wmo4f7xZNPKOFcrCepTfWKYNWF-LHua_sBlqnrzrdtqcWjwQcRMCqRwh7f3bMB4yplIhRigPB6R07DyRoP1BuiYpy5_DqRFux_iNeq6EJ7BWU20m-hrq56K61uav7EIeWE3K30ewe_S_hOzl4Tvw2_zjpyFjljrvYtAswXrKQy7-mkODgpOorhB6W"/>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-bold text-primary dark:text-white">Fennec Fox</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Desert Dweller</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition-all">
+<div class="aspect-square w-full overflow-hidden bg-gray-200">
+<img alt="Barbary Macaque sitting on a tree branch" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Barbary Macaque monkey in cedar forest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHDK08L1rajt9xn9Eeq_WYS2qpf8OU6e74uJy4zrQD9J3U3trcBusd29ig5y3_Y2kYxaBBci5jAsWmWIPJKrv8u9ilayDr0GJXkXTvhg_gCHDUjxyy-hYr_iMgdk1I_ysDgBpER0ViMPxWqhsqTjnAxylLCfZuCN760lzOdo4xH5OffYC82TWOAoG8A-bUeRfNUWlYhICrLvtRpFaTXtbLM-9N_grpyP40thWZm9EkPvzlatNrQmzgnPfoFQRjS0LCo-dMFRrsZdXk"/>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-bold text-primary dark:text-white">Barbary Macaque</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Endangered Primate</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition-all">
+<div class="aspect-square w-full overflow-hidden bg-gray-200">
+<img alt="Dorcas Gazelle grazing in a field" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Graceful gazelle standing in savanna" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVASCjaV6SS93xRBquCUtKiZNnPHd-U5M6kck5WdAKPART66DfjjV9zXMakVvg9OE9MSga6uGh-HtXS4HTNZVeL3UqRul9re8nT0lxbD6MawHjC3GCUVYHeyFACoeVF-qjke6h6W7gfnWJS310ZpaJkN_JEDQCghn7RjRZK0Td41k8ByqxBTjaaJYvyUHvBTrMneEQ6UhX_iQu1V0F0q5SSrBuzPHeLj3iRTiavXdOKtBiqoJt7w23IemdxHTC-ZCjSJes__J3dgb6"/>
+</div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center rounded-md bg-accent-green/90 px-2 py-1 text-xs font-bold text-white backdrop-blur-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] mr-1">eco</span> Protected
+                                </span>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-bold text-primary dark:text-white">Dorcas Gazelle</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Savanna Sprinter</p>
+</div>
+</div>
+</div>
+<div class="mt-6 flex justify-center sm:hidden">
+<a class="flex items-center gap-1 text-sm font-bold text-accent-blue hover:underline" href="#">
+                            View all animals <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Tours Section -->
+<section class="w-full px-4 py-12 lg:px-20 xl:px-40 bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-gray-800">
+<div class="mx-auto max-w-6xl">
+<h2 class="text-2xl font-bold leading-tight tracking-tight text-primary dark:text-white md:text-3xl mb-8">
+                        Upcoming Live Guided Tours
+                    </h2>
+<div class="flex flex-col gap-4">
+<!-- Tour Item 1 -->
+<div class="flex flex-col md:flex-row items-center gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-slate-800 p-4 transition-all hover:border-accent-blue hover:bg-blue-50/50 dark:hover:bg-slate-700">
+<div class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30 text-accent-blue dark:text-blue-300">
+<span class="material-symbols-outlined text-3xl">calendar_today</span>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="flex flex-wrap items-center justify-center gap-2 md:justify-start">
+<h3 class="text-lg font-bold text-primary dark:text-white">Safari Sunset: Live from Marrakech</h3>
+<span class="rounded-full bg-accent-green/10 px-2 py-0.5 text-xs font-bold text-accent-green">Seats Available</span>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Today, 18:00 GMT • Guided by Hassan E.</p>
+</div>
+<div class="flex w-full md:w-auto flex-col gap-2 sm:flex-row">
+<button class="w-full whitespace-nowrap rounded-lg bg-accent-orange px-6 py-2.5 text-sm font-bold text-white shadow-sm transition-colors hover:bg-orange-700 md:w-auto">
+                                    Join Now
+                                </button>
+<button class="w-full whitespace-nowrap rounded-lg border border-gray-300 dark:border-gray-600 px-6 py-2.5 text-sm font-bold text-primary dark:text-white transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 md:w-auto">
+                                    Details
+                                </button>
+</div>
+</div>
+<!-- Tour Item 2 -->
+<div class="flex flex-col md:flex-row items-center gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-slate-800 p-4 transition-all hover:border-accent-blue hover:bg-blue-50/50 dark:hover:bg-slate-700">
+<div class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30 text-accent-blue dark:text-blue-300">
+<span class="material-symbols-outlined text-3xl">photo_camera</span>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="flex flex-wrap items-center justify-center gap-2 md:justify-start">
+<h3 class="text-lg font-bold text-primary dark:text-white">Photography Masterclass: Desert Edition</h3>
+<span class="rounded-full bg-orange-100 dark:bg-orange-900/30 px-2 py-0.5 text-xs font-bold text-orange-600 dark:text-orange-400">Popular</span>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Tomorrow, 10:00 GMT • Guided by Sarah L.</p>
+</div>
+<div class="flex w-full md:w-auto flex-col gap-2 sm:flex-row">
+<button class="w-full whitespace-nowrap rounded-lg bg-accent-orange px-6 py-2.5 text-sm font-bold text-white shadow-sm transition-colors hover:bg-orange-700 md:w-auto">
+                                    Book Spot
+                                </button>
+<button class="w-full whitespace-nowrap rounded-lg border border-gray-300 dark:border-gray-600 px-6 py-2.5 text-sm font-bold text-primary dark:text-white transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 md:w-auto">
+                                    Details
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-background-dark border-t border-gray-800 text-white">
+<div class="mx-auto max-w-6xl px-4 py-12 lg:px-20 xl:px-40">
+<div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-accent-blue" style="font-size: 28px;">pets</span>
+<h2 class="text-xl font-bold">ASSAD</h2>
+</div>
+<p class="text-sm text-gray-400 mb-6">
+                            Bringing the wild beauty of Morocco to fans worldwide during AFCON 2025.
+                        </p>
+<div class="flex gap-4">
+<!-- Social Icons Placeholders -->
+<div class="h-8 w-8 rounded-full bg-gray-800 hover:bg-accent-blue flex items-center justify-center transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">public</span>
+</div>
+<div class="h-8 w-8 rounded-full bg-gray-800 hover:bg-accent-blue flex items-center justify-center transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+</div>
+<div class="h-8 w-8 rounded-full bg-gray-800 hover:bg-accent-blue flex items-center justify-center transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-white">Explore</h4>
+<ul class="space-y-2 text-sm text-gray-400">
+<li><a class="hover:text-accent-blue transition-colors" href="#">Animals</a></li>
+<li><a class="hover:text-accent-blue transition-colors" href="#">Virtual Tours</a></li>
+<li><a class="hover:text-accent-blue transition-colors" href="#">Interactive Map</a></li>
+<li><a class="hover:text-accent-blue transition-colors" href="#">Merchandise</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-white">AFCON 2025</h4>
+<ul class="space-y-2 text-sm text-gray-400">
+<li><a class="hover:text-accent-blue transition-colors" href="#">Match Schedule</a></li>
+<li><a class="hover:text-accent-blue transition-colors" href="#">Host Cities</a></li>
+<li><a class="hover:text-accent-blue transition-colors" href="#">Fan Zones</a></li>
+<li><a class="hover:text-accent-blue transition-colors" href="#">Tickets</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-white">Staff Access</h4>
+<ul class="space-y-2 text-sm text-gray-400">
+<li><a class="hover:text-accent-blue transition-colors" href="#">Guide Portal</a></li>
+<li><a class="hover:text-accent-blue transition-colors" href="#">Admin Dashboard</a></li>
+<li><a class="hover:text-accent-blue transition-colors" href="#">Support</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+<p>© 2024 ASSAD Virtual Zoo. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
